@@ -1,7 +1,7 @@
 -- Core settings
 require("core.options")
 require("core.keymaps")
-
+require("core.snippets")
 -- Lazy.nvim bootstrap
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -34,7 +34,7 @@ require("lazy").setup({
 	require("plugins.treesitter"),
 	require("plugins.telescope"),
 	require("plugins.lsp"),
-	require("plugins.autocompletion"),
+	require("plugins.completion"),
 	require("plugins.autoformatting"),
 	require("plugins.gitsigns"),
 	require("plugins.alpha"),
